@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 680" width="100%" height="100%" style="background:#0d1117; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <linearGradient id="gradProvider" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="gradUser" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e1b4b" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#172554" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="gradSources" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="gradBronze" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <linearGradient id="gradSilver" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+    <linearGradient id="gradGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="gradCompute" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="550" y="40" text-anchor="middle" fill="#f8fafc" font-size="22" font-weight="bold">Arquitectura Lakehouse Wanderbricks &amp; Modelo de Responsabilidad Compartida</text>
+  <text x="550" y="65" text-anchor="middle" fill="#94a3b8" font-size="13">Evidencia de Aprendizaje 2: Despliegue y Gobierno de Datos en la Nube (Databricks / Unity Catalog)</text>
+
+  <!-- Responsibility Zones -->
+  <!-- Zone 1: Administrado por el Proveedor -->
+  <rect x="40" y="90" width="1020" height="240" rx="14" fill="url(#gradProvider)" stroke="#334155" stroke-width="2" stroke-dasharray="6 4" filter="url(#shadow)"/>
+  <rect x="60" y="105" width="280" height="28" rx="6" fill="#334155"/>
+  <text x="70" y="124" fill="#38bdf8" font-size="12" font-weight="bold">&#9881; ADMINISTRADO POR EL PROVEEDOR (Databricks / AWS)</text>
+  <text x="1040" y="124" text-anchor="end" fill="#64748b" font-size="11">Infraestructura F&#237;sica, C&#243;mputo Serverless, SLA 99.99%, Red F&#237;sica y Control Plane</text>
+
+  <!-- Provider Elements -->
+  <!-- Cloud Storage Block -->
+  <rect x="70" y="150" width="280" height="155" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+  <text x="90" y="178" fill="#38bdf8" font-size="14" font-weight="bold">&#9729; Almacenamiento Objeto Cloud</text>
+  <text x="90" y="200" fill="#cbd5e1" font-size="12">&#8226; AWS S3 / Azure ADLS Gen2</text>
+  <text x="90" y="222" fill="#cbd5e1" font-size="12">&#8226; Alta disponibilidad (11 9s)</text>
+  <text x="90" y="244" fill="#cbd5e1" font-size="12">&#8226; Cifrado en reposo (KMS)</text>
+  <text x="90" y="266" fill="#94a3b8" font-size="11">Garantiza durabilidad y escalabilidad infinita</text>
+
+  <!-- Spark Runtime / Photon Block -->
+  <rect x="380" y="150" width="310" height="155" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+  <text x="400" y="178" fill="#38bdf8" font-size="14" font-weight="bold">&#9889; Motor de Ejecuci&#243;n &amp; C&#243;mputo</text>
+  <text x="400" y="200" fill="#cbd5e1" font-size="12">&#8226; Databricks Runtime (Apache Spark 3.5)</text>
+  <text x="400" y="222" fill="#cbd5e1" font-size="12">&#8226; Motor Vectorizado Photon en C++</text>
+  <text x="400" y="244" fill="#cbd5e1" font-size="12">&#8226; Auto-scaling y Auto-termination de nodos</text>
+  <text x="400" y="266" fill="#94a3b8" font-size="11">Gesti&#243;n autom&#225;tica de parches de SO y fallos de VMs</text>
+
+  <!-- Unity Catalog Control Plane Block -->
+  <rect x="720" y="150" width="310" height="155" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+  <text x="740" y="178" fill="#38bdf8" font-size="14" font-weight="bold">&#128272; Unity Catalog Control Plane</text>
+  <text x="740" y="200" fill="#cbd5e1" font-size="12">&#8226; Metastore Centralizado en la Nube</text>
+  <text x="740" y="222" fill="#cbd5e1" font-size="12">&#8226; Motor de Linaje Autom&#225;tico</text>
+  <text x="740" y="244" fill="#cbd5e1" font-size="12">&#8226; Servicio de Auditor&#237;a y Registro de Queries</text>
+  <text x="740" y="266" fill="#94a3b8" font-size="11">Sincronizaci&#243;n global de pol&#237;ticas de acceso</text>
+
+  <!-- Zone 2: Administrado por Nosotros -->
+  <rect x="40" y="350" width="1020" height="300" rx="14" fill="url(#gradUser)" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="60" y="365" width="290" height="28" rx="6" fill="#1d4ed8"/>
+  <text x="70" y="384" fill="#ffffff" font-size="12" font-weight="bold">&#128100; ADMINISTRADO POR NOSOTROS (Data Team)</text>
+  <text x="1040" y="384" text-anchor="end" fill="#93c5fd" font-size="11">Modelado Medallion, Permisos GRANT, Pipelines y Consultas de Negocio</text>
+
+  <!-- Data Flow Boxes -->
+  <!-- 1. Fuentes -->
+  <rect x="65" y="415" width="160" height="205" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+  <rect x="75" y="425" width="140" height="26" rx="4" fill="url(#gradSources)"/>
+  <text x="145" y="443" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">1. FUENTES</text>
+  <text x="78" y="475" fill="#f8fafc" font-size="11">&#8226; samples.wanderbricks</text>
+  <text x="78" y="495" fill="#cbd5e1" font-size="11">  - clickstream (JSON)</text>
+  <text x="78" y="515" fill="#cbd5e1" font-size="11">  - bookings (OLTP)</text>
+  <text x="78" y="535" fill="#cbd5e1" font-size="11">  - users &amp; properties</text>
+  <text x="78" y="555" fill="#cbd5e1" font-size="11">  - reviews (texto)</text>
+  <text x="78" y="585" fill="#f59e0b" font-size="10" font-weight="bold">Archivos en Vol&#250;menes</text>
+  <text x="78" y="602" fill="#94a3b8" font-size="10">raw_landing / raw files</text>
+
+  <!-- Arrow 1 -->
+  <path d="M 230 517 L 255 517" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <polygon points="255,512 265,517 255,522" fill="#38bdf8"/>
+
+  <!-- 2. Capa Bronce -->
+  <rect x="270" y="415" width="160" height="205" rx="8" fill="#1e293b" stroke="#b45309" stroke-width="1.5"/>
+  <rect x="280" y="425" width="140" height="26" rx="4" fill="url(#gradBronze)"/>
+  <text x="350" y="443" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">2. CAPA BRONCE</text>
+  <text x="282" y="475" fill="#f8fafc" font-size="11">wanderbricks_lakehouse</text>
+  <text x="282" y="495" fill="#fbbf24" font-size="11">esquema: bronce</text>
+  <text x="282" y="520" fill="#cbd5e1" font-size="10">&#8226; Ingesta cruda append</text>
+  <text x="282" y="540" fill="#cbd5e1" font-size="10">&#8226; Metadatos (_ingest_time)</text>
+  <text x="282" y="560" fill="#cbd5e1" font-size="10">&#8226; Contratos StructType</text>
+  <rect x="280" y="580" width="140" height="28" rx="4" fill="#451a03"/>
+  <text x="350" y="598" text-anchor="middle" fill="#fdba74" font-size="9" font-weight="bold">GRANT: MODIFY (Data Eng)</text>
+
+  <!-- Arrow 2 -->
+  <polygon points="445,512 455,517 445,522" fill="#38bdf8"/>
+  <line x1="435" y1="517" x2="445" y2="517" stroke="#38bdf8" stroke-width="2.5"/>
+
+  <!-- 3. Capa Plata -->
+  <rect x="460" y="415" width="165" height="205" rx="8" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+  <rect x="470" y="425" width="145" height="26" rx="4" fill="url(#gradSilver)"/>
+  <text x="542" y="443" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">3. CAPA PLATA</text>
+  <text x="472" y="475" fill="#f8fafc" font-size="11">wanderbricks_lakehouse</text>
+  <text x="472" y="495" fill="#94a3b8" font-size="11">esquema: plata</text>
+  <text x="472" y="520" fill="#cbd5e1" font-size="10">&#8226; Limpieza &amp; validaci&#243;n</text>
+  <text x="472" y="540" fill="#cbd5e1" font-size="10">&#8226; Structs aplanados</text>
+  <text x="472" y="560" fill="#cbd5e1" font-size="10">&#8226; Tipos normalizados</text>
+  <rect x="470" y="580" width="145" height="28" rx="4" fill="#334155"/>
+  <text x="542" y="598" text-anchor="middle" fill="#e2e8f0" font-size="9" font-weight="bold">GRANT: SELECT (Data Eng/Sci)</text>
+
+  <!-- Arrow 3 -->
+  <polygon points="640,512 650,517 640,522" fill="#38bdf8"/>
+  <line x1="630" y1="517" x2="640" y2="517" stroke="#38bdf8" stroke-width="2.5"/>
+
+  <!-- 4. Capa Oro -->
+  <rect x="655" y="415" width="170" height="205" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+  <rect x="665" y="425" width="150" height="26" rx="4" fill="url(#gradGold)"/>
+  <text x="740" y="443" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">4. CAPA ORO</text>
+  <text x="668" y="475" fill="#f8fafc" font-size="11">wanderbricks_lakehouse</text>
+  <text x="668" y="495" fill="#fde047" font-size="11">esquema: oro</text>
+  <text x="668" y="520" fill="#cbd5e1" font-size="10">&#8226; Modelos dimensionales</text>
+  <text x="668" y="540" fill="#cbd5e1" font-size="10">&#8226; KPIs de conversi&#243;n &amp; DAU</text>
+  <text x="668" y="560" fill="#cbd5e1" font-size="10">&#8226; Trazabilidad de Linaje</text>
+  <rect x="665" y="580" width="150" height="28" rx="4" fill="#78350f"/>
+  <text x="740" y="598" text-anchor="middle" fill="#fef08a" font-size="9" font-weight="bold">GRANT: SELECT (Analistas BI)</text>
+
+  <!-- Arrow 4 -->
+  <polygon points="840,512 850,517 840,522" fill="#38bdf8"/>
+  <line x1="830" y1="517" x2="840" y2="517" stroke="#38bdf8" stroke-width="2.5"/>
+
+  <!-- 5. Consumo -->
+  <rect x="855" y="415" width="185" height="205" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+  <rect x="865" y="425" width="165" height="26" rx="4" fill="url(#gradCompute)"/>
+  <text x="947" y="443" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">5. CONSUMO / BI</text>
+  <text x="868" y="475" fill="#f8fafc" font-size="11">Acceso con Menor Privilegio</text>
+  <text x="868" y="498" fill="#cbd5e1" font-size="10">&#8226; Databricks SQL Dashboards</text>
+  <text x="868" y="518" fill="#cbd5e1" font-size="10">&#8226; PowerBI / Tableau (JDBC)</text>
+  <text x="868" y="538" fill="#cbd5e1" font-size="10">&#8226; Databricks Jobs (DAG)</text>
+  <text x="868" y="558" fill="#cbd5e1" font-size="10">&#8226; Modelos ML &amp; Segmentaci&#243;n</text>
+  <rect x="865" y="580" width="165" height="28" rx="4" fill="#0c4a6e"/>
+  <text x="947" y="598" text-anchor="middle" fill="#7dd3fc" font-size="9" font-weight="bold">Cero acceso a datos crudos/PII</text>
+
+</svg>
